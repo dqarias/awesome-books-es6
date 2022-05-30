@@ -1,5 +1,3 @@
-/* eslint-disable no-undef */
-/* eslint-disable no-unused-vars */
 import Book from './modules/books.js';
 import Render from './modules/render.js';
 import Storage from './modules/storage.js';
