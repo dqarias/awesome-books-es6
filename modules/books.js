@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
-export class Book {
+export default class Book {
     titleValue;
+
     authorValue;
 
     constructor(titleValue, authorValue) {
@@ -8,4 +9,3 @@ export class Book {
       this.authorValue = authorValue;
     }
 }
-

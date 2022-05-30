@@ -1,9 +1,8 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
-import {Book} from './modules/books.js';
-import {Render} from './modules/render.js';
-import {Storage} from './modules/storage.js';
-
+import Book from './modules/books.js';
+import Render from './modules/render.js';
+import Storage from './modules/storage.js';
 
 Render.displayLibrary();
 
@@ -23,8 +22,6 @@ formButton.addEventListener('submit', (e) => {
   Storage.storeBooks(book);
   Render.renderData(book);
   Render.clearField();
-  
-
 });
 
 bookList.addEventListener('click', (e) => {
