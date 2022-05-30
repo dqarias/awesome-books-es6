@@ -1,0 +1,164 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+}
+
+main {
+  min-height: 95vh;
+  width: 100%;
+}
+
+h1,
+h2 {
+  text-align: center;
+  padding-bottom: 0.7rem;
+}
+
+footer {
+  height: 5vh;
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 0.5rem;
+}
+
+.bookList {
+  display: none;
+  flex-direction: column;
+  border: 2px solid black;
+  gap: 10px;
+  margin: 0 0.5rem;
+  padding: 0.5rem 0.5rem;
+}
+
+.bookList.active {
+  display: flex;
+}
+
+.render-li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: auto 10px;
+}
+
+hr {
+  border: 0.5px solid black;
+  width: 50%;
+  height: 0;
+  margin: 25px auto;
+}
+
+.render-li:nth-child(odd) {
+  background-color: lightgray;
+}
+
+.removeButton {
+  padding: 0.2rem;
+  border: 1px solid black;
+}
+
+input {
+  height: 30px;
+  border: 3px solid black;
+}
+
+.button {
+  width: 80px;
+  height: 30px;
+}
+
+.li__first {
+  align-self: center;
+}
+
+.list-li,
+.add-li,
+.contact-li {
+  cursor: pointer;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem  0.5rem;
+  padding: 0 10px;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.date {
+  text-align: end;
+  margin-right: 0.5rem;
+}
+
+.nav-list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-title {
+  padding: 0;
+}
+
+.list-of-books {
+  display: none;
+  flex-direction: column;
+}
+
+.list-of-books.active {
+  display: flex;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form.inactive {
+  display: none;
+}
+
+.contact-info {
+  display: none;
+  height: 400px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info.active {
+  display: flex;
+}
+
+.contact-info h3 {
+  font-size: 3rem;
+  margin-bottom: 3vh;
+}
+
+.p-class {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info p {
+  font-size: 1.5rem;
+}
+
+.address {
+  margin-top: 2vh;
+  font-size: 1rem;
+}
