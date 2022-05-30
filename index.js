@@ -1,10 +1,14 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
+import {Book} from './modules/books.js';
+import {Render} from './modules/render.js';
+import {Storage} from './modules/storage.js';
+
 
 Render.displayLibrary();
 
-const bookTitle = document.querySelector('#title');
-const bookAuthor = document.querySelector('#author');
+const title = document.querySelector('#title');
+const author = document.querySelector('#author');
 const formButton = document.querySelector('.form');
 const bookList = document.querySelector('.bookList');
 
@@ -16,9 +20,11 @@ formButton.addEventListener('submit', (e) => {
 
   UL.classList.add('active');
   const book = new Book(title.value, author.value);
-  Render.renderData(book);
   Storage.storeBooks(book);
+  Render.renderData(book);
   Render.clearField();
+  
+
 });
 
 bookList.addEventListener('click', (e) => {

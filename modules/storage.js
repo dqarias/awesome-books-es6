@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-class Storage {
+export class Storage {
     static getBooks() {
       let library;
       if (!localStorage.getItem('library')) {
@@ -26,3 +26,4 @@ class Storage {
       localStorage.setItem('library', JSON.stringify(bookArray));
     }
   }
+
