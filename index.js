@@ -16,7 +16,6 @@ formButton.addEventListener('submit', (e) => {
   e.preventDefault();
   const UL = document.querySelector('.bookList');
   if (UL.textContent === null) return null;
-
   UL.classList.add('active');
   const book = new Book(title.value, author.value);
   Storage.storeBooks(book);
