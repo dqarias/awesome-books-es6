@@ -3,6 +3,7 @@
 import Book from './modules/books.js';
 import Render from './modules/render.js';
 import Storage from './modules/storage.js';
+import { DateTime } from './node_modules/luxon/src/luxon.js';
 
 Render.displayLibrary();
 
@@ -56,4 +57,4 @@ contactLi.addEventListener('click', () => {
 });
 
 const dynamicDate = document.querySelector('.date');
-dynamicDate.textContent = new Date().toLocaleString();
+dynamicDate.textContent = DateTime.now();
