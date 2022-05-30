@@ -31,7 +31,6 @@ footer {
 }
 
 .bookList {
-  display: none;
   flex-direction: column;
   border: 2px solid black;
   gap: 10px;
